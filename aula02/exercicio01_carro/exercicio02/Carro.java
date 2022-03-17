@@ -1,5 +1,5 @@
 
-package exercicio02;
+package exercicio01_carro.exercicio02;
 
     public class Carro {
         private String modelo, marca;
