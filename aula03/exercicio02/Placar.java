@@ -1,3 +1,4 @@
+package exercicio02;
 public class Placar {
     private String timeMandante, timeVisitante;
     private int placarMandante, placarVisitante;

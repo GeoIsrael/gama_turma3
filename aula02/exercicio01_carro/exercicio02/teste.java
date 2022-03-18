@@ -1,4 +1,4 @@
-package exercicio02;
+package exercicio01_carro.exercicio02;
 
 public class teste {
     public static void main(String[] args) {

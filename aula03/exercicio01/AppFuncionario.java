@@ -1,4 +1,4 @@
-package aula03.exercicio01;
+package exercicio01;
 
 public class AppFuncionario {
     public static void main(String[] args) {
