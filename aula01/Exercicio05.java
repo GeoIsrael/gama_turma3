@@ -14,5 +14,7 @@ public class Exercicio05 {
             contador=contador+chute;
         }
         System.out.println(contador);
+
+        teclado.close();
     }
 }

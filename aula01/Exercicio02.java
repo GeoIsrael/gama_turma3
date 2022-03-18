@@ -30,5 +30,6 @@ public class Exercicio02 {
         } else {
             System.out.println("credito Negado");
         }
+        teclado.close();
     }
 }

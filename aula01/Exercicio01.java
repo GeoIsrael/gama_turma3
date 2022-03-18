@@ -3,8 +3,7 @@ import java.util.Scanner;
 public class Exercicio01 {
 
     public static void main(String[] args) {
-
-        new Scanner(System.in);
+        
         Scanner leitor = new Scanner(System.in);
 
         double nota1, nota2, media;

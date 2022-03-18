@@ -18,5 +18,7 @@ public class exercicio03 {
 
         }
 
+        teclado.close();
+
     }
 }
