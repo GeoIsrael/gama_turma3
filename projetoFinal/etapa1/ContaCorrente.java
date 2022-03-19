@@ -1,7 +1,5 @@
 package etapa1;
 
-import javax.swing.text.html.HTMLDocument.BlockElement;
-
 public class ContaCorrente extends Conta {
 
     @Override
@@ -9,7 +7,7 @@ public class ContaCorrente extends Conta {
         if(getSaldo()>valorDoSaque){
             saque(valorDoSaque);
 
-        };
+        }
         return getSaldo();
     }
     
