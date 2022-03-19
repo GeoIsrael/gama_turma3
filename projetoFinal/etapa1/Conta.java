@@ -24,7 +24,9 @@ abstract class Conta {
     public double getSaldo() {
         return saldo;
     }
-
-
+    
+    public int getNumero() {
+        return numero;
+    }
 
 }

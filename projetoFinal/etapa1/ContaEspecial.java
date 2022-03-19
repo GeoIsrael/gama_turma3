@@ -1,7 +1,9 @@
 package etapa1;
 
 public class ContaEspecial extends Conta{
-    double limite=200;
+    double limite;
+
+
 
 
     @Override
