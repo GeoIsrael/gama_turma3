@@ -5,6 +5,12 @@ abstract class Conta {
     private double saldo;
 
 
+    public Conta(int numero, double saldo){
+        this.numero=numero;
+        this.saldo= saldo;
+    }
+
+
     public void mostrarDados(){
         System.out.println(numero + " " + saldo);
 

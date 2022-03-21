@@ -1,6 +1,14 @@
 package etapa1;
 
 public class ContaEspecial extends Conta{
+    public ContaEspecial(int numero, double saldo) {
+        super(numero, saldo);
+        //TODO Auto-generated constructor stub
+    }
+
+
+
+
     double limite;
 
 
@@ -10,7 +18,7 @@ public class ContaEspecial extends Conta{
     public double saque(double valorDoSaque) {
         double limiteDeTransação=getSaldo()+limite;
         if(limiteDeTransação>valorDoSaque){
-            saque(valorDoSaque);
+            super.saque(valorDoSaque)
 
         };
         return getSaldo();
