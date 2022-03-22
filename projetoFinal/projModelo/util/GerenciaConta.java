@@ -1,6 +1,8 @@
-package projModelo.modelo;
+package projModelo.util;
 
 import java.util.ArrayList;
+
+import projModelo.modelo.Conta;
 
 public class GerenciaConta {
         private ArrayList<Conta> contas;
@@ -23,12 +25,6 @@ public class GerenciaConta {
                 }
                 return "Não Encontrado";
         }
-
-       /// public boolean alterarTelefone(int numero, double novoSaldo){
-     ///           for (int i =0; 1< contas.size(); 1++){
-       //                 if (contas.get(i).getSaldo()==novoSaldo){
-   //                             return contas.get(i).to
- //                       }
             
         private int posicao (int codigo){
                 for (int i =0; i<contas.size(); i++){
@@ -49,11 +45,6 @@ public class GerenciaConta {
                 return false;
         }
 
-
-
-        ContaCorrente cc1 = new ContaCorrente(0, 0);
-        ContaCorrente cc2 = new ContaCorrente(0, 0);
-        ContaEspecial ce1 = new ContaEspecial(0, 0);
 
 
 

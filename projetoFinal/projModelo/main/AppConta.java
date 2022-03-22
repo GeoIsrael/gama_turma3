@@ -1,6 +1,11 @@
-package projModelo.modelo;
+package projModelo.main;
 
 import java.util.Scanner;
+
+import projModelo.modelo.Conta;
+import projModelo.modelo.ContaCorrente;
+import projModelo.modelo.ContaEspecial;
+import projModelo.util.GerenciaConta;
 
 public class AppConta {
     public static void main(String[] args) {
@@ -12,7 +17,7 @@ public class AppConta {
         String entradaDigitada;
         Conta c;
 
-        Conta conta1 = new ContaCorrente(0, 5000);
+
 
         while (opcao!=4){
             System.out.println("****** BEM-VINDO AO NEWBANK S2******");
@@ -50,7 +55,7 @@ public class AppConta {
                     break;
 
                 case 3:
-                    System.out.println("Digite o código para procurar:");
+                    System.out.println("Digite o numero da conta para procurar:");
                     entradaDigitada = teclado.nextLine();
                     numero = Integer.parseInt(entradaDigitada);
                     System.out.println(contas.exibir(numero));

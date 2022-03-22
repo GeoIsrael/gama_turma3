@@ -1,6 +1,6 @@
 package projModelo.modelo;
 
-abstract class Conta {
+public abstract class Conta {
     private int numero;
     private double saldo;
 
@@ -33,6 +33,11 @@ abstract class Conta {
     
     public int getNumero() {
         return numero;
+    }
+
+    @Override
+    public String toString() {
+        return numero+": "+ saldo;
     }
 
 }
