@@ -1,4 +1,4 @@
-package etapa1;
+package projModelo.modelo;
 
 abstract class Conta {
     private int numero;

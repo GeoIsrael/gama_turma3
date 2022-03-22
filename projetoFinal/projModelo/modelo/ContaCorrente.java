@@ -1,4 +1,4 @@
-package etapa1;
+package projModelo.modelo;
 
 public class ContaCorrente extends Conta {
 
