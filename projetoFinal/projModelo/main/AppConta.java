@@ -76,6 +76,7 @@ public class AppConta {
                         System.out.println("Saque Não efetuado");
                     }
                     break;
+
                 case 5:
                     System.out.println("Digite o numero da conta:");
                     entradaDigitada = teclado.nextLine();
@@ -96,7 +97,7 @@ public class AppConta {
                     entradaDigitada = teclado.nextLine();
                     numero = Integer.parseInt(entradaDigitada);
                     boolean removeu = contas.remover(numero);
-                    if(removeu) {
+                    if (removeu) {
                         System.out.println("Removido com sucesso");
                     } else {
                         System.out.println("Não foi possível remover");
