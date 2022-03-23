@@ -8,7 +8,6 @@ public class FuncionarioSenior extends Funcionario{
 
     public FuncionarioSenior(String nome, int hora, int valorDaHora) {
         super(nome, hora, valorDaHora);
-        //TODO Auto-generated constructor stub
     }
 
 
@@ -22,7 +21,6 @@ public class FuncionarioSenior extends Funcionario{
 
     @Override
     public void exibirDados() {
-        // TODO Auto-generated method stub
         super.exibirDados();
     }
 }

@@ -17,9 +17,7 @@ public class AppConta {
         String entradaDigitada;
         Conta c;
 
-
-
-        while (opcao!=4){
+        while (opcao != 4) {
             System.out.println("****** BEM-VINDO AO NEWBANK S2******");
             System.out.println("Oque Desejas?");
             System.out.println("1-Criar Conta Corrente");
@@ -30,7 +28,7 @@ public class AppConta {
             entradaDigitada = teclado.nextLine();
             opcao = Integer.parseInt(entradaDigitada);
 
-            switch(opcao){
+            switch (opcao) {
                 case 1:
                     System.out.println("Digite o numero da conta:");
                     entradaDigitada = teclado.nextLine();
@@ -42,7 +40,6 @@ public class AppConta {
                     contas.adicionar(c);
                     break;
 
-        
                 case 2:
                     System.out.println("Digite o numero da conta:");
                     entradaDigitada = teclado.nextLine();
@@ -61,7 +58,6 @@ public class AppConta {
                     System.out.println(contas.exibir(numero));
                     break;
 
-
                 case 4:
                     System.out.println("Fim do programa.");
                     break;
@@ -74,6 +70,5 @@ public class AppConta {
 
         teclado.close();
 
-        
     }
 }
