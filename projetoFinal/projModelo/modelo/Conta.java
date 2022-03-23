@@ -15,13 +15,16 @@ public abstract class Conta {
     }
 
     public double deposita(double valorDoDeposito) {
-        this.saldo += valorDoDeposito;
+        if (valorDoDeposito > 0)
+            this.saldo += valorDoDeposito;
         return saldo;
 
     }
 
     public double saque(double valorDoSaque) {
-        return this.saldo -= valorDoSaque;
+        if (valorDoSaque > 0)
+            this.saldo -= valorDoSaque;
+        return saldo;
     }
 
     public double getSaldo() {
