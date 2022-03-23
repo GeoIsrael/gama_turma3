@@ -69,8 +69,29 @@ public class AppConta {
                     System.out.println("Digite o valor  para sacar:");
                     entradaDigitada = teclado.nextLine();
                     valorASacar = Integer.parseInt(entradaDigitada);
-
+                    boolean alterou = contas.sacarNaConta(numero, valorASacar);
+                    if (alterou) {
+                        System.out.println("Saque efetuado com sucesso");
+                    } else {
+                        System.out.println("Saque Não efetuado");
+                    }
+                    break;
                 case 5:
+                    System.out.println("Digite o numero da conta:");
+                    entradaDigitada = teclado.nextLine();
+                    numero = Integer.parseInt(entradaDigitada);
+                    System.out.println("Digite o valor  para Depositar:");
+                    entradaDigitada = teclado.nextLine();
+                    valorASacar = Integer.parseInt(entradaDigitada);
+                    boolean validacao = contas.depositarNaConta(numero, valorASacar);
+                    if (validacao) {
+                        System.out.println("Deposito efetuado com sucesso");
+                    } else {
+                        System.out.println("Deposito Não efetuado");
+                    }
+                    break;
+
+                case 6:
                     System.out.println("Digite o código a ser removido:");
                     entradaDigitada = teclado.nextLine();
                     numero = Integer.parseInt(entradaDigitada);
@@ -82,7 +103,7 @@ public class AppConta {
                     }
                     break;
 
-                case 6:
+                case 7:
                     System.out.println("Fim do programa.");
                     break;
 

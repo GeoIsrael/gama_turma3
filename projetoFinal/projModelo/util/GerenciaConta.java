@@ -25,6 +25,28 @@ public class GerenciaConta {
                 }
                 return "Não Encontrado";
         }
+        public boolean sacarNaConta(int numero, double valorASacar){
+                for (int i = 0; i < contas.size(); i++) {
+                        if (contas.get(i).getNumero() == numero) {
+                                contas.get(i).saque(valorASacar);
+                                ;
+                                return true;
+                        }
+                        }
+                        return false;
+                }
+
+        public boolean depositarNaConta(int numero, double valorADepositar){
+                for (int i = 0; i < contas.size(); i++) {
+                        if (contas.get(i).getNumero() == numero) {
+                                contas.get(i).deposita(valorADepositar)
+                                ;
+                                return true;
+                        }
+                        }
+                        return false;
+                }
+
 
         private int posicao(int codigo) {
                 for (int i = 0; i < contas.size(); i++) {
