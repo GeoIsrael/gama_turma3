@@ -29,7 +29,8 @@ public class AppConta {
             System.out.println("6 - Excluir Conta");
             System.out.println("7 - Sair");
 
-            entradaDigitada = teclado.nextLine();
+            System.out.println("Faça sua escollha");
+            entradaDigitada = teclado.next();
             opcao = Integer.parseInt(entradaDigitada);
 
             switch (opcao) {
