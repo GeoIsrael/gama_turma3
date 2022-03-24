@@ -15,8 +15,8 @@ public class ContaCorrenteTest
     @Test
     public void deveRetornarOvalorMenosOSaque(){
         Conta cc = new ContaCorrente(2222, 500);
-        cc.deposita(50);
-        assertEquals(550, cc);
+        cc.saque(50);
+        assertEquals("2222: 450.0", cc);
     }
 
 }
