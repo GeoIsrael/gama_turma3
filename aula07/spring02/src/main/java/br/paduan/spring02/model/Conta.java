@@ -1,12 +1,17 @@
-package projModelo.modelo;
+package br.paduan.spring02.model;
 
-public abstract class Conta {
+public class Conta {
+
     private int numero;
     private double saldo;
 
-    public Conta(int numero, double saldo) {
-        this.numero = numero;
-        this.saldo = saldo;
+    public Conta(){
+
+    }
+
+    public Conta(int numero,double saldo){
+        this.numero=numero;
+        this.saldo=saldo;
     }
 
     public void mostrarDados() {
@@ -39,5 +44,6 @@ public abstract class Conta {
     public String toString() {
         return numero + ": " + saldo;
     }
+
 
 }

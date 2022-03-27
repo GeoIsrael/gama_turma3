@@ -1,4 +1,4 @@
-package projModelo.modelo;
+package projModelo.model;
 
 public class ContaEspecial extends Conta {
     public ContaEspecial(int numero, double saldo) {

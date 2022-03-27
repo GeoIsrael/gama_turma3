@@ -1,4 +1,4 @@
-package projModelo.modelo;
+package projModelo.model;
 
 public class ContaCorrente extends Conta {
 

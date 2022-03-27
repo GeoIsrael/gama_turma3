@@ -2,9 +2,9 @@ package projModelo.main;
 
 import java.util.Scanner;
 
-import projModelo.modelo.Conta;
-import projModelo.modelo.ContaCorrente;
-import projModelo.modelo.ContaEspecial;
+import projModelo.model.Conta;
+import projModelo.model.ContaCorrente;
+import projModelo.model.ContaEspecial;
 import projModelo.util.GerenciaConta;
 
 public class AppConta {

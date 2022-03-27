@@ -2,7 +2,7 @@ package projModelo.util;
 
 import java.util.ArrayList;
 
-import projModelo.modelo.Conta;
+import projModelo.model.Conta;
 
 public class GerenciaConta {
         private ArrayList<Conta> contas;
