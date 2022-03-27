@@ -12,11 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 import br.paduan.spring02.dao.ContaCorrenteDAO;
 import br.paduan.spring02.model.ContaCorrente;
 
-public class ContaCorrenteController {
-    
 @RestController
 @CrossOrigin("*") // solicitações podem vir de qualuqer origem
-public class ProdutoController {
+public class ContaCorrenteController {
+    
+    @RestController
+    @CrossOrigin("*") // solicitações podem vir de qualuqer origem
+    public class ProdutoController {
 
     @Autowired // injeção de dependência: JPA criar a classe e o objeto
     private ContaCorrenteDAO dao;
@@ -32,7 +34,7 @@ public class ProdutoController {
         }
     }
 
-    @GetMapping("/contascorrentes/{cod}") // 'id' é o nome do parâmetro
+    @GetMapping("/ContaCorrente/{cod}") // 'id' é o nome do parâmetro
     public ResponseEntity<ContaCorrente> obterContaoPorCodigo(@PathVariable int cod){
         ContaCorrente cc = dao.findById(cod).orElse(null);  //busca o produto pela chave primária
 

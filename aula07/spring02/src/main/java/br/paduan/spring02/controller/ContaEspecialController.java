@@ -34,7 +34,7 @@ public class ContaEspecialController {
         }
     }
 
-    @GetMapping("/contascorrentes/{cod}") // 'id' é o nome do parâmetro
+    @GetMapping("/ContaEspecial/{cod}") // 'id' é o nome do parâmetro
     public ResponseEntity<ContaEspecial> obterContaoPorCodigo(@PathVariable int cod){
         ContaEspecial cc = dao.findById(cod).orElse(null);  //busca o produto pela chave primária
 
